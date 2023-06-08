@@ -8,6 +8,7 @@
     <title>Кубическая Кухня</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
 
+
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,23 +20,7 @@
             <nav>
                 <audio id="audioPlayer" src="sounds/Elephant.mp3" type="audio/mpeg"></audio>
                 <a href="#" id="playButton"><img src="img/logo.png"></a>
-                <script>
-                    var playButton = document.getElementById('playButton');
-                    var audioPlayer = document.getElementById('audioPlayer');
-
-                    playButton.addEventListener('click', function(event) {
-                    event.preventDefault(); 
-                    
-                    if (audioPlayer.paused) {
-                        audioPlayer.play();
-                        playButton.classList.add('playing');
-                    } else {
-                        audioPlayer.pause();
-                        playButton.classList.remove('playing');
-                    }
-                    });
-                    audioPlayer.volume = 0.3; // Установка громкости (от 0 до 1)
-                </script>
+                <script src="script.js"></script>
                 <ul>
                     <li><a href="#foods">Еда</a></li>
                     <li><a href="#drinks">Напитки</a></li>
